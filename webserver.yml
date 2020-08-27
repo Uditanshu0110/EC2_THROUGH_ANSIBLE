@@ -1,0 +1,15 @@
+- hosts: user
+  tasks:
+    - name: httpd on aws
+      command: "sudo yum install httpd -y"
+
+    - name: start services
+      service: 
+          name: "httpd"
+          state: started
+          enabled: yes
+
+    - name: copy files
+      copy: 
+         src: "/etc/ansible/firstpage.html"
+         dest: "/var/www/html/"
