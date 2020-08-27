@@ -2,10 +2,20 @@
 
 
 In this, we will be launching EC2 instance on AWS using Ansible and after launching we will be configuring webserver in ec2 instance.
+
+
 Let’s get started
+
+
+
 So, the first question arises that What is Ansible?🤔
+
 Ansible is an open-source automation tool and used to provision, configure, and deployment.
+
 Now, you might be thinking that what we will be doing throughout this mini project.
+
+
+
 ♦️Provision EC2 instance through ansible.
 ♦️Retrieve the IP Address of instance using a dynamic inventory concept.
 ♦️Configure the webserver through ansible!
